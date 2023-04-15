@@ -1,39 +1,124 @@
-import { useState } from 'react';
 import './App.css';
+import { HiBell, HiCog6Tooth, HiShoppingCart } from 'react-icons/hi2';
+import { catalogNewReleases } from './data';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
+    <div className="container">
       <header>
         <nav>
-          <div>Logo</div>
+          <div className="logo">
+            <img src="/images/astronaut.jpg" alt="store logo" />
+          </div>
           <ul>
-            <li>Link1</li>
-            <li>Link2</li>
-            <li>Link3</li>
-            <li>Link4</li>
-            <li>Link5</li>
+            <li>Home</li>
+            <li>Deals</li>
+            <li>Staff Picks</li>
+            <li>Reviews</li>
           </ul>
         </nav>
-        <div>
-          <span>Notification</span>
-          <span>Cart</span>
-          <span>Setting</span>
+        <div className="account">
+          <HiBell className="icon" />
+          <HiShoppingCart className="icon" />
+          <HiCog6Tooth className="icon" />
         </div>
       </header>
       <main>
         <section className="filter">Catalog filter</section>
         <section className="hero">Hero Section</section>
-        <section className="catalog">Top Selling</section>
-        <section className="catalog">New Release</section>
+        <section className="catalog">
+          <div className="catalog-row">
+            <h3>New Releases</h3>
+            <ul>
+              {catalogNewReleases.map((item) => {
+                return (
+                  <li key={item.id}>
+                    <div className="card">
+                      <img src={item.image} alt={item.title} />
+                      <p>{item.title}</p>
+                      <p>{item.developer}</p>
+                      <p>{item.price}</p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </section>
+        <section className="catalog">
+          <div className="catalog-row">
+            <h3>Top Selling</h3>
+            <ul>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section className="hero">Hero Section</section>
-        <section className="catalog">Shooters</section>
+        <section className="catalog">
+          <div className="catalog-row">
+            <h3>Shooters</h3>
+            <ul>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section className="hero">Hardware</section>
-        <section className="catalog">Family Friendly</section>
+        <section className="catalog">
+          <div className="catalog-row">
+            <h3>Family Friendly</h3>
+            <ul>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+              <li>
+                <div className="card"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
-      <footer>Footer</footer>
+      <footer>
+        <ul>
+          <li>Home</li>
+          <li>Deals</li>
+          <li>Staff Picks</li>
+          <li>Reviews</li>
+        </ul>
+        <div className="social">
+          <span>Twitter</span>
+          <span>Facebook</span>
+          <span>Discord</span>
+          <span>Slack</span>
+        </div>
+      </footer>
     </div>
   );
 }
