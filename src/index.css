@@ -2,7 +2,9 @@
   font-family: 'Poppins', sans-serif;
 
   --color-primary: #ffffff;
+  --color-secondary: #6f7075;
   --color-background: #15181d;
+  --color-card-background: #1e2127;
   --color-button-primary: #57585b;
   --color-button-background: #2b2e34;
 }
@@ -11,6 +13,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
 
 /* @media (prefers-color-scheme: light) {
