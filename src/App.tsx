@@ -1,12 +1,6 @@
 import './App.css';
-import { HiBell, HiCog6Tooth, HiShoppingCart } from 'react-icons/hi2';
-import {
-  FaDiscord,
-  FaFacebookF,
-  FaSearch,
-  FaSlackHash,
-  FaTwitter,
-} from 'react-icons/fa';
+import Navbar from './components/Navbar/Navbar';
+import { FaDiscord, FaFacebookF, FaSlackHash, FaTwitter } from 'react-icons/fa';
 import {
   catalogFamilyFriendly,
   catalogNewReleases,
@@ -14,53 +8,31 @@ import {
   catalogTopSelling,
   heroItem1,
   heroItem2,
+  navigationLinks,
+  ICatalog,
 } from './data';
+import HeroCard from './components/HeroCard/HeroCard';
+import { Button, ProductCard, Search } from './components';
 
 function App() {
   return (
     <div className="container">
       <div className="wrapper">
-        <header>
-          <nav>
-            <div className="logo">
-              <img src="/images/astronaut.jpg" alt="store logo" />
-            </div>
-            <ul>
-              <li>Home</li>
-              <li>Deals</li>
-              <li>Staff Picks</li>
-              <li>Reviews</li>
-            </ul>
-          </nav>
-          <div className="account">
-            <HiBell className="icon" />
-            <HiShoppingCart className="icon" />
-            <HiCog6Tooth className="icon" />
-          </div>
-        </header>
+        <Navbar />
         <main>
-          <section className="filter-section">
-            <div className="input-wrapper">
-              <input type="search" placeholder="Search" />
-              <FaSearch className="icon" />
-            </div>
+          <div className="filter-section">
+            <Search />
             <div className="divider"></div>
-          </section>
+          </div>
           <section className="hero-section">
             {heroItem1.map((item) => {
               return (
-                <div className="hero-card" key={item.id}>
-                  <img src={item.image} alt={item.title} />
-                  <div className="info">
-                    <div className="header">
-                      <h3 className="title">{item.title}</h3>
-                      <p>{item.description}</p>
-                    </div>
-                    <div className="footer">
-                      <button>Detail</button>
-                    </div>
-                  </div>
-                </div>
+                <HeroCard
+                  key={item.id}
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                />
               );
             })}
           </section>
@@ -68,19 +40,10 @@ function App() {
             <div className="catalog-row">
               <h3 className="catalog-header">New Releases</h3>
               <ul>
-                {catalogNewReleases.map((item) => {
+                {catalogNewReleases.map((game: ICatalog) => {
                   return (
-                    <li key={item.id}>
-                      <div className="card">
-                        <img
-                          className="box-image"
-                          src={item.image}
-                          alt={item.title}
-                        />
-                        <p className="title">{item.title}</p>
-                        <p className="developer">{item.developer}</p>
-                        <p className="price">{item.price}</p>
-                      </div>
+                    <li key={game.id}>
+                      <ProductCard game={game} />
                     </li>
                   );
                 })}
@@ -89,21 +52,12 @@ function App() {
           </section>
           <section className="catalog">
             <div className="catalog-row">
-              <h3 className="catalog-header">Top Selling</h3>
+              <h3 className="catalog-header">New Releases</h3>
               <ul>
-                {catalogTopSelling.map((item) => {
+                {catalogTopSelling.map((game: ICatalog) => {
                   return (
-                    <li key={item.id}>
-                      <div className="card">
-                        <img
-                          className="box-image"
-                          src={item.image}
-                          alt={item.title}
-                        />
-                        <p className="title">{item.title}</p>
-                        <p className="developer">{item.developer}</p>
-                        <p className="price">{item.price}</p>
-                      </div>
+                    <li key={game.id}>
+                      <ProductCard game={game} />
                     </li>
                   );
                 })}
@@ -113,18 +67,12 @@ function App() {
           <section className="hero-section">
             {heroItem2.map((item) => {
               return (
-                <div className="hero-card" key={item.id}>
-                  <img src={item.image} alt={item.title} />
-                  <div className="info">
-                    <div className="header">
-                      <h3 className="title">{item.title}</h3>
-                      <p>{item.description}</p>
-                    </div>
-                    <div className="footer">
-                      <button>Detail</button>
-                    </div>
-                  </div>
-                </div>
+                <HeroCard
+                  key={item.id}
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                />
               );
             })}
           </section>
@@ -132,19 +80,10 @@ function App() {
             <div className="catalog-row">
               <h3 className="catalog-header">Action</h3>
               <ul>
-                {catalogAction.map((item) => {
+                {catalogAction.map((game: ICatalog) => {
                   return (
-                    <li key={item.id}>
-                      <div className="card">
-                        <img
-                          className="box-image"
-                          src={item.image}
-                          alt={item.title}
-                        />
-                        <p className="title">{item.title}</p>
-                        <p className="developer">{item.developer}</p>
-                        <p className="price">{item.price}</p>
-                      </div>
+                    <li key={game.id}>
+                      <ProductCard game={game} />
                     </li>
                   );
                 })}
@@ -159,19 +98,10 @@ function App() {
             <div className="catalog-row">
               <h3 className="catalog-header">Family Friendly</h3>
               <ul>
-                {catalogFamilyFriendly.map((item) => {
+                {catalogFamilyFriendly.map((game: ICatalog) => {
                   return (
-                    <li key={item.id}>
-                      <div className="card">
-                        <img
-                          className="box-image"
-                          src={item.image}
-                          alt={item.title}
-                        />
-                        <p className="title">{item.title}</p>
-                        <p className="developer">{item.developer}</p>
-                        <p className="price">{item.price}</p>
-                      </div>
+                    <li key={game.id}>
+                      <ProductCard game={game} />
                     </li>
                   );
                 })}
@@ -180,25 +110,30 @@ function App() {
           </section>
         </main>
         <footer>
-          <ul>
-            <li>Home</li>
-            <li>Deals</li>
-            <li>Staff Picks</li>
-            <li>Reviews</li>
-          </ul>
+          <nav>
+            <ul>
+              {navigationLinks.map((link) => {
+                return (
+                  <li>
+                    <Button href={link.href}>{link.title}</Button>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
           <div className="social">
-            <span>
+            <Button variant="icon" title="Notification">
               <FaTwitter className="icon" />
-            </span>
-            <span>
+            </Button>
+            <Button variant="icon" title="Notification">
               <FaFacebookF className="icon" />
-            </span>
-            <span>
+            </Button>
+            <Button variant="icon" title="Notification">
               <FaDiscord className="icon" />
-            </span>
-            <span>
+            </Button>
+            <Button variant="icon" title="Notification">
               <FaSlackHash className="icon" />
-            </span>
+            </Button>
           </div>
         </footer>
       </div>

@@ -3,10 +3,16 @@
 
   --color-primary: #ffffff;
   --color-secondary: #6f7075;
+  --color-accent: #54b3d6;
+
   --color-background: #15181d;
+
+  --color-button-primary: #f2f2f2;
+  --color-button-background: #313131;
+  --color-button-light-fade: #686868;
+  --color-button-dark-fade: #515151;
+
   --color-card-background: #1e2127;
-  --color-button-primary: #57585b;
-  --color-button-background: #2b2e34;
 }
 
 body {
@@ -16,16 +22,3 @@ body {
   background-color: var(--color-background);
   color: var(--color-primary);
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

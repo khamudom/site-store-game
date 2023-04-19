@@ -1,9 +1,10 @@
-interface ICatalog {
+export interface ICatalog {
   id: number;
   title: string;
   image: string;
   developer: string;
   price: string;
+  href: string;
 }
 
 export const catalogNewReleases: ICatalog[] = [
@@ -13,6 +14,7 @@ export const catalogNewReleases: ICatalog[] = [
     image: './src/assets/images/newrelease/dirtrally.jpg',
     developer: 'Codemaster',
     price: '$60.00',
+    href: '/#',
   },
   {
     id: 1,
@@ -20,6 +22,7 @@ export const catalogNewReleases: ICatalog[] = [
     image: './src/assets/images/newrelease/battlefield.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 2,
@@ -27,6 +30,7 @@ export const catalogNewReleases: ICatalog[] = [
     image: './src/assets/images/newrelease/nfs.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 3,
@@ -34,6 +38,7 @@ export const catalogNewReleases: ICatalog[] = [
     image: './src/assets/images/newrelease/callofduty.jpg',
     developer: 'Activision',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 4,
@@ -41,6 +46,7 @@ export const catalogNewReleases: ICatalog[] = [
     image: './src/assets/images/newrelease/fifa.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
+    href: '/',
   },
 ];
 
@@ -51,6 +57,7 @@ export const catalogTopSelling: ICatalog[] = [
     image: './src/assets/images/topselling/grandtheft5.jpg',
     developer: 'Rockstar Games',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 1,
@@ -58,6 +65,7 @@ export const catalogTopSelling: ICatalog[] = [
     image: './src/assets/images/topselling/nfs1.png',
     developer: 'Electronic Arts',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 2,
@@ -65,6 +73,7 @@ export const catalogTopSelling: ICatalog[] = [
     image: './src/assets/images/topselling/frostpunk.jpg',
     developer: '11 Bit studios',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 3,
@@ -72,6 +81,7 @@ export const catalogTopSelling: ICatalog[] = [
     image: './src/assets/images/topselling/borderland3.png',
     developer: 'Gearbox Software',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 4,
@@ -79,6 +89,7 @@ export const catalogTopSelling: ICatalog[] = [
     image: './src/assets/images/topselling/battlefield1.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
+    href: '/',
   },
 ];
 
@@ -89,6 +100,7 @@ export const catalogAction: ICatalog[] = [
     image: './src/assets/images/action/callofdutyww2.jpg',
     developer: 'Activision',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 1,
@@ -96,6 +108,7 @@ export const catalogAction: ICatalog[] = [
     image: './src/assets/images/action/gears.jpg',
     developer: 'Microsoft Studios',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 2,
@@ -103,6 +116,7 @@ export const catalogAction: ICatalog[] = [
     image: './src/assets/images/action/tomb.png',
     developer: 'Microsoft Studios',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 3,
@@ -110,6 +124,7 @@ export const catalogAction: ICatalog[] = [
     image: './src/assets/images/action/swbattlefront.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 4,
@@ -117,6 +132,7 @@ export const catalogAction: ICatalog[] = [
     image: './src/assets/images/action/prey.jpg',
     developer: 'Bethesda Softworks',
     price: '$60.00',
+    href: '/',
   },
 ];
 
@@ -127,6 +143,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
     image: './src/assets/images/family/minecraft.png',
     developer: 'Mojang Studios',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 1,
@@ -134,6 +151,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
     image: './src/assets/images/family/harrypotter.jpg',
     developer: 'Warner Bros. Games',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 2,
@@ -141,6 +159,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
     image: './src/assets/images/family/luckytale.png',
     developer: 'Playful Studios',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 3,
@@ -148,6 +167,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
     image: './src/assets/images/family/swlego.jpg',
     developer: 'Warner Bros. Games',
     price: '$60.00',
+    href: '/',
   },
   {
     id: 4,
@@ -155,6 +175,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
     image: './src/assets/images/family/justdance.png',
     developer: 'Ubisoft',
     price: '$60.00',
+    href: '/',
   },
 ];
 
@@ -177,3 +198,129 @@ export const heroItem2 = [
     image: './src/assets/images/hero/destiny.jpg',
   },
 ];
+
+export const navigationLinks = [
+  {
+    id: 0,
+    title: 'Home',
+    href: '/',
+  },
+  {
+    id: 1,
+    title: 'Deals',
+    href: '#',
+  },
+  {
+    id: 2,
+    title: 'Staff Picks',
+    href: '#',
+  },
+  {
+    id: 3,
+    title: 'Reviews',
+    href: '#',
+  },
+];
+
+// export interface IGameProps {
+//   id: number;
+//   title: string;
+//   image: string;
+//   developer: string;
+//   price?: string;
+// }
+
+// export interface GameCategory {
+//   category: string;
+//   games: IGameProps[];
+// }
+
+// export const mockNewReleases: GameCategory = {
+//   category: 'New Releases',
+//   games: [
+//     {
+//       id: 0,
+//       title: 'Dirt Rally',
+//       image: './src/assets/images/newrelease/dirtrally.jpg',
+//       developer: 'Codemaster',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 1,
+//       title: 'Battlefield 5',
+//       image: './src/assets/images/newrelease/battlefield.jpg',
+//       developer: 'Electronic Arts',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 2,
+//       title: 'Need For Speed Heat',
+//       image: './src/assets/images/newrelease/nfs.jpg',
+//       developer: 'Electronic Arts',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 3,
+//       title: 'Call of Duty: Modern Warfare',
+//       image: './src/assets/images/newrelease/callofduty.jpg',
+//       developer: 'Activision',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 4,
+//       title: 'FIFA 20',
+//       image: './src/assets/images/newrelease/fifa.jpg',
+//       developer: 'Electronic Arts',
+//       price: '$60.00',
+//     },
+//   ],
+// };
+
+// const gameCategory2: GameCategory = {
+//   category: 'Game Category Two',
+//   games: [
+//     {
+//       id: 0,
+//       title: 'Grand Theft Auto 5',
+//       image: './src/assets/images/topselling/grandtheft5.jpg',
+//       developer: 'Rockstar Games',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 1,
+//       title: 'Need For Speed',
+//       image: './src/assets/images/topselling/nfs1.png',
+//       developer: 'Electronic Arts',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 2,
+//       title: 'Frostpunk',
+//       image: './src/assets/images/topselling/frostpunk.jpg',
+//       developer: '11 Bit studios',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 3,
+//       title: 'Borderlands 3',
+//       image: './src/assets/images/topselling/borderland3.png',
+//       developer: 'Gearbox Software',
+//       price: '$60.00',
+//     },
+//     {
+//       id: 4,
+//       title: 'Battlefield 1',
+//       image: './src/assets/images/topselling/battlefield1.jpg',
+//       developer: 'Electronic Arts',
+//       price: '$60.00',
+//     },
+//   ],
+// };
+
+// export interface GameCatalog {
+//   gameCatalogNewReleases: GameCategory;
+// }
+
+// export const MyCatalog: GameCatalog = {
+//   gameCatalogNewReleases: mockNewReleases,
+// };

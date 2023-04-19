@@ -1,0 +1,37 @@
+.heroCard {
+  display: flex;
+  width: 1118px;
+  height: 460px;
+  background-color: var(--color-card-background);
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 40px 38px 40px;
+}
+
+.title {
+  width: 306px;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.image {
+  width: 732px;
+  height: 460px;
+  object-fit: cover;
+}
+
+.actionBtn {
+  width: 114px;
+  height: 48px;
+  background-color: var(--color-button-background);
+  color: var(--color-button-primary);
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}

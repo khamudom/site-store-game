@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 140px 40px 36px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+nav ul,
+.account {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  column-gap: 24px;
+}
+
+nav ul {
+  column-gap: 24px;
+}
+
+.account {
+  column-gap: 8px;
+}
+
+.logo img {
+  height: 60px;
+  margin-inline-end: 45px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  color: var(--color-button);
+}
