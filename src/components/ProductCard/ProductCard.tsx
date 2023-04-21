@@ -4,15 +4,20 @@ import { ICatalog } from '../../data';
 
 interface IProductCardProps {
   game: ICatalog;
+  className?: string;
 }
 
-const ProductCard = ({ game }: IProductCardProps) => {
+const ProductCard = ({ className, game }: IProductCardProps) => {
   // Temporary adding this event to prevent page from reloading.
   const onClick = (e: any) => {
     e.preventDefault();
   };
   return (
-    <a className={styles.anchor} href={game.href} onClick={onClick}>
+    <a
+      className={`${styles.anchor} ${className}`}
+      href={game.href}
+      onClick={onClick}
+    >
       <div className={styles.card}>
         <div className={styles.top}>
           <img className={styles.boxImage} src={game.image} alt={game.title} />

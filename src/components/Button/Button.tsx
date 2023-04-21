@@ -6,6 +6,7 @@ type ButtonProps = {
   href?: string;
   rel?: string;
   target?: string;
+  className?: string;
   disabled?: boolean;
   children?: ReactNode;
   variant?: 'default' | 'icon';
@@ -18,6 +19,7 @@ const Button = ({
   href,
   rel,
   target,
+  className,
   title,
   type = 'button',
   variant,
@@ -40,7 +42,7 @@ const Button = ({
       <button
         className={`${styles.btn} ${
           variant === 'icon' ? `${styles.iconBtn}` : ''
-        }`}
+        } ${className}`}
         type={type}
         title={title}
         {...props}

@@ -14,7 +14,7 @@ const Navbar = () => {
         <ul>
           {navigationLinks.map((link) => {
             return (
-              <li>
+              <li key={link.id}>
                 <Button href={link.href}>{link.title}</Button>
               </li>
             );

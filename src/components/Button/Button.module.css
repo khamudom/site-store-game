@@ -112,6 +112,9 @@
 
 /* icon only button style start */
 .btn.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   color: var(--color-button-primary);
   padding: 8px 10px;

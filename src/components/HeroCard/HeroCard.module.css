@@ -1,7 +1,7 @@
 .heroCard {
   display: flex;
-  width: 1118px;
-  height: 460px;
+  max-width: 1118px;
+  max-height: 460px;
   background-color: var(--color-card-background);
 }
 
@@ -13,15 +13,15 @@
 }
 
 .title {
-  width: 306px;
+  max-width: 306px;
   font-size: 30px;
   font-weight: 600;
   margin: 0;
 }
 
 .image {
-  width: 732px;
-  height: 460px;
+  max-width: 732px;
+  max-height: 460px;
   object-fit: cover;
 }
 

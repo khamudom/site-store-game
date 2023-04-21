@@ -16,12 +16,13 @@
 .top {
   border: 1px solid transparent;
   overflow: hidden;
+  height: 300px;
 }
 
 .boxImage {
   display: flex;
-  width: 206px;
-  height: 300px;
+  max-width: 206px;
+  height: 100%;
   object-fit: cover;
   transition: all 0.3s ease-out;
 }

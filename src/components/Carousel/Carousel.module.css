@@ -1,0 +1,49 @@
+.carousel {
+  position: relative;
+}
+
+.itemsContainer {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-inline-start: 50px;
+  column-gap: 22px;
+}
+
+.catalogItem {
+  width: 206px;
+}
+
+.btnPrev,
+.btnNext {
+  position: absolute;
+  top: -100px;
+  bottom: 0;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-background);
+  border-radius: 50%;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  margin: auto;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnPrev {
+  left: 0px;
+}
+
+.btnNext {
+  right: 0px;
+}
+
+.btnPrev:hover,
+.btnNext:hover {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  cursor: pointer;
+}
