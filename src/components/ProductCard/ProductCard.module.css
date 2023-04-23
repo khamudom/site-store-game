@@ -11,6 +11,7 @@
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
+  border-radius: 4px;
 }
 
 .top {
@@ -22,9 +23,10 @@
 .boxImage {
   display: flex;
   max-width: 206px;
-  height: 100%;
   object-fit: cover;
   transition: all 0.3s ease-out;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 .anchor:focus {
@@ -66,4 +68,38 @@ p {
 .price {
   margin-top: 12px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 412px) {
+  .card {
+    background-color: var(--color-card-background);
+  }
+
+  .top {
+    border: 1px solid transparent;
+    overflow: hidden;
+    height: 154px;
+  }
+
+  .boxImage {
+    max-width: 160px;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    width: 106px;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 0;
+    max-width: 160px;
+  }
+
+  .developer,
+  .price {
+    display: none;
+  }
 }

@@ -26,3 +26,12 @@
   color: var(--color-primary);
   outline: none;
 }
+
+@media screen and (max-width: 412px) {
+  .inputWrapper {
+    margin-left: unset;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+}

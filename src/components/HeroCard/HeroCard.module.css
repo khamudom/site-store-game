@@ -1,8 +1,12 @@
 .heroCard {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(400px, 732px) 386px;
+  grid-template-rows: minmax(20px, 460px);
   max-width: 1118px;
   max-height: 460px;
   background-color: var(--color-card-background);
+  position: relative;
+  border-radius: 4px;
 }
 
 .infoWrapper {
@@ -19,19 +23,77 @@
   margin: 0;
 }
 
-.image {
-  max-width: 732px;
-  max-height: 460px;
+img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.actionBtn {
-  width: 114px;
-  height: 48px;
-  background-color: var(--color-button-background);
-  color: var(--color-button-primary);
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
+@media screen and (max-width: 972px) {
+  .heroCard {
+    grid-template-columns: unset;
+    grid-template-rows: auto 1fr;
+    max-height: 1460px;
+  }
+
+  .infoWrapper {
+    padding: 20px 40px;
+  }
+
+  .title {
+    max-width: unset;
+    font-size: 24px;
+  }
+
+  .description {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .heroCard {
+    display: block;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .infoWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  img {
+    display: flex;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
 }

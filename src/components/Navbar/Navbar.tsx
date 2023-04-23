@@ -1,15 +1,21 @@
 import React from 'react';
 import { Button } from '../../components';
 import { HiBell, HiCog6Tooth, HiShoppingCart } from 'react-icons/hi2';
+import { FaBars } from 'react-icons/fa';
 import styles from './Navbar.module.css';
 import { navigationLinks } from '../../data';
 
 const Navbar = () => {
   return (
     <header>
-      <nav>
+      <nav className={styles.navFlyout}>
+        <Button variant="icon">
+          <FaBars className={styles.icon} />
+        </Button>
+      </nav>
+      <nav className={styles.navLinks}>
         <div className={styles.logo}>
-          <img src="/src/assets/images/astrogame.png" alt="logo" />
+          <img src="/src/assets/images/joystick.png" alt="logo" />
         </div>
         <ul>
           {navigationLinks.map((link) => {

@@ -11,11 +11,14 @@ type HeroCardProps = {
 const HeroCard = ({ image, title, description }: HeroCardProps) => {
   return (
     <div className={styles.heroCard}>
-      <img className={styles.image} src={image} alt={title} />
+      <div className={styles.image}>
+        <div className={styles.gradient}></div>
+        <img className={styles.image} src={image} alt={title} />
+      </div>
       <div className={styles.infoWrapper}>
         <div className={styles.header}>
           <h3 className={styles.title}>{title}</h3>
-          <p>{description}</p>
+          <p className={styles.description}>{description}</p>
         </div>
         <div className={styles.footer}>
           <Button type="button">Details</Button>

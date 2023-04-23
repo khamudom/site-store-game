@@ -20,10 +20,10 @@ function App() {
       <div className={styles.wrapper}>
         <div className={styles.navigation}>
           <Navbar />
-          <div className={styles.searchSection}>
-            <Search />
-            <div className={styles.divider}></div>
-          </div>
+        </div>
+        <div className={styles.searchSection}>
+          <Search />
+          <div className={styles.divider}></div>
         </div>
         <main>
           <section className={styles.heroSection}>
@@ -68,10 +68,10 @@ function App() {
               <Carousel catalogs={catalogAction} />
             </div>
           </section>
-          <section className={styles.upSellSection}>
+          {/* <section className={styles.upSellSection}>
             <div className={styles.upSellCard}></div>
             <div className={styles.upSellCard}></div>
-          </section>
+          </section> */}
           <section className={styles.catalogSection}>
             <div className={styles.catalogRow}>
               <h3 className={styles.catalogHeader}>Family Friendly</h3>
@@ -80,7 +80,7 @@ function App() {
           </section>
         </main>
         <footer>
-          <nav>
+          <nav className={styles.navFooter}>
             <ul>
               {navigationLinks.map((link) => {
                 return (

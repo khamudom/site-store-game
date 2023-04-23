@@ -40,7 +40,7 @@ const Carousel: React.FC<CarouselProps> = ({ className, catalogs }) => {
         <FiChevronLeft />
       </button>
       <div className={styles.itemsContainer} ref={itemsContainerRef}>
-        {catalogs?.map((item, index) => (
+        {catalogs?.map((item) => (
           <ProductCard
             game={item}
             className={styles.catalogItem}
