@@ -149,6 +149,7 @@ footer ul {
   }
 
   .social {
+    column-gap: 20px;
     margin-top: 0;
   }
 }

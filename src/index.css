@@ -21,4 +21,9 @@ body {
   box-sizing: border-box;
   background-color: var(--color-background);
   color: var(--color-primary);
+  overflow: auto;
+}
+
+body.sideNavOpen {
+  overflow: hidden;
 }

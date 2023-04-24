@@ -13,6 +13,7 @@ import {
 import HeroCard from './components/HeroCard/HeroCard';
 import { Button, Search } from './components';
 import Carousel from './components/Carousel/Carousel';
+import { useEffect, useState } from 'react';
 
 function App() {
   return (
