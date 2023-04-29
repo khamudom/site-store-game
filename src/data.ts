@@ -11,7 +11,7 @@ export const catalogNewReleases: ICatalog[] = [
   {
     id: 0,
     title: 'Dirt Rally',
-    image: './src/assets/images/newrelease/dirtrally.jpg',
+    image: '/images/category/newrelease/dirtrally.jpg',
     developer: 'Codemaster',
     price: '$60.00',
     href: '/#',
@@ -19,7 +19,7 @@ export const catalogNewReleases: ICatalog[] = [
   {
     id: 1,
     title: 'Battlefield 5',
-    image: './src/assets/images/newrelease/battlefield.jpg',
+    image: 'images/category/newrelease/battlefield.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
     href: '/',
@@ -27,7 +27,7 @@ export const catalogNewReleases: ICatalog[] = [
   {
     id: 2,
     title: 'Need For Speed Heat',
-    image: './src/assets/images/newrelease/nfs.jpg',
+    image: '/images/category/newrelease/nfs.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
     href: '/',
@@ -35,7 +35,7 @@ export const catalogNewReleases: ICatalog[] = [
   {
     id: 3,
     title: 'Call of Duty: Modern Warfare',
-    image: './src/assets/images/newrelease/callofduty.jpg',
+    image: '/images/category/newrelease/callofduty.jpg',
     developer: 'Activision',
     price: '$60.00',
     href: '/',
@@ -43,7 +43,7 @@ export const catalogNewReleases: ICatalog[] = [
   {
     id: 4,
     title: 'FIFA 20',
-    image: './src/assets/images/newrelease/fifa.jpg',
+    image: '/images/category/newrelease/fifa.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
     href: '/',
@@ -54,7 +54,7 @@ export const catalogTopSelling: ICatalog[] = [
   {
     id: 0,
     title: 'Grand Theft Auto 5',
-    image: './src/assets/images/topselling/grandtheft5.jpg',
+    image: '/images/category/topselling/grandtheft5.jpg',
     developer: 'Rockstar Games',
     price: '$60.00',
     href: '/',
@@ -62,7 +62,7 @@ export const catalogTopSelling: ICatalog[] = [
   {
     id: 1,
     title: 'Need For Speed',
-    image: './src/assets/images/topselling/nfs1.png',
+    image: '/images/category/topselling/nfs1.png',
     developer: 'Electronic Arts',
     price: '$60.00',
     href: '/',
@@ -70,7 +70,7 @@ export const catalogTopSelling: ICatalog[] = [
   {
     id: 2,
     title: 'Frostpunk',
-    image: './src/assets/images/topselling/frostpunk.jpg',
+    image: '/images/category/topselling/frostpunk.jpg',
     developer: '11 Bit studios',
     price: '$60.00',
     href: '/',
@@ -78,7 +78,7 @@ export const catalogTopSelling: ICatalog[] = [
   {
     id: 3,
     title: 'Borderlands 3',
-    image: './src/assets/images/topselling/borderland3.png',
+    image: '/images/category/topselling/borderland3.png',
     developer: 'Gearbox Software',
     price: '$60.00',
     href: '/',
@@ -86,7 +86,7 @@ export const catalogTopSelling: ICatalog[] = [
   {
     id: 4,
     title: 'Battlefield 1',
-    image: './src/assets/images/topselling/battlefield1.jpg',
+    image: '/images/category/topselling/battlefield1.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
     href: '/',
@@ -97,7 +97,7 @@ export const catalogAction: ICatalog[] = [
   {
     id: 0,
     title: 'Call of Duty: WW2',
-    image: './src/assets/images/action/callofdutyww2.jpg',
+    image: '/images/category/action/callofdutyww2.jpg',
     developer: 'Activision',
     price: '$60.00',
     href: '/',
@@ -105,7 +105,7 @@ export const catalogAction: ICatalog[] = [
   {
     id: 1,
     title: 'Gears of War 4',
-    image: './src/assets/images/action/gears.jpg',
+    image: '/images/category/action/gears.jpg',
     developer: 'Microsoft Studios',
     price: '$60.00',
     href: '/',
@@ -113,7 +113,7 @@ export const catalogAction: ICatalog[] = [
   {
     id: 2,
     title: 'Rise of the Tomb Raider',
-    image: './src/assets/images/action/tomb.png',
+    image: '/images/category/action/tomb.png',
     developer: 'Microsoft Studios',
     price: '$60.00',
     href: '/',
@@ -121,7 +121,7 @@ export const catalogAction: ICatalog[] = [
   {
     id: 3,
     title: 'Star Wars Battlefront',
-    image: './src/assets/images/action/swbattlefront.jpg',
+    image: '/images/category/action/swbattlefront.jpg',
     developer: 'Electronic Arts',
     price: '$60.00',
     href: '/',
@@ -129,7 +129,7 @@ export const catalogAction: ICatalog[] = [
   {
     id: 4,
     title: 'Prey',
-    image: './src/assets/images/action/prey.jpg',
+    image: '/images/category/action/prey.jpg',
     developer: 'Bethesda Softworks',
     price: '$60.00',
     href: '/',
@@ -140,7 +140,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
   {
     id: 0,
     title: 'Minecraft',
-    image: './src/assets/images/family/minecraft.png',
+    image: '/images/category/family/minecraft.png',
     developer: 'Mojang Studios',
     price: '$60.00',
     href: '/',
@@ -148,7 +148,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
   {
     id: 1,
     title: 'Lego Harry Potter: Years 1-4',
-    image: './src/assets/images/family/harrypotter.jpg',
+    image: '/images/category/family/harrypotter.jpg',
     developer: 'Warner Bros. Games',
     price: '$60.00',
     href: '/',
@@ -156,7 +156,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
   {
     id: 2,
     title: 'Lucky Tales',
-    image: './src/assets/images/family/luckytale.png',
+    image: '/images/category/family/luckytale.png',
     developer: 'Playful Studios',
     price: '$60.00',
     href: '/',
@@ -164,7 +164,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
   {
     id: 3,
     title: 'Star Wars',
-    image: './src/assets/images/family/swlego.jpg',
+    image: '/images/category/family/swlego.jpg',
     developer: 'Warner Bros. Games',
     price: '$60.00',
     href: '/',
@@ -172,7 +172,7 @@ export const catalogFamilyFriendly: ICatalog[] = [
   {
     id: 4,
     title: 'Just Dance',
-    image: './src/assets/images/family/justdance.png',
+    image: '/images/category/family/justdance.png',
     developer: 'Ubisoft',
     price: '$60.00',
     href: '/',
@@ -185,7 +185,7 @@ export const heroItem1 = [
     title: 'Star Wars Jedi: Fallen Order',
     description:
       'An abandoned Padawan must complete his training, develop new powerful Force abilities, and master the art of the lightsaber - all while staying one step ahead of the Empire.',
-    image: './src/assets/images/hero/swfallenorder.jpg',
+    image: '/images/category/hero/swfallenorder.jpg',
   },
 ];
 
@@ -195,7 +195,7 @@ export const heroItem2 = [
     title: 'Destiny 2',
     description:
       'Destiny 2 is an action MMO with a single evolving world that you and your friends can join anytime, anywhere, absolutely free.',
-    image: './src/assets/images/hero/destiny.jpg',
+    image: '/images/category/hero/destiny.jpg',
   },
 ];
 
