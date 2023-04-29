@@ -74,7 +74,7 @@ const Navbar = () => {
       </nav>
       <nav className={styles.navLinks}>
         <div className={styles.logo}>
-          <img src="/src/assets/images/joystick.png" alt="logo" />
+          <img src="/images/joystick.png" alt="logo" />
         </div>
         <ul>
           {navigationLinks.map((link) => {
