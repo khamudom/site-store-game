@@ -1,10 +1,10 @@
 import React from 'react';
-import { catalogNewReleases, IGameProps, GameCategory } from '../../data';
+import { ICatalog } from '../../data';
 import ProductCard from '../ProductCard/ProductCard';
 
 interface RowProps {
   category: string;
-  games: IGameProps[];
+  games: ICatalog[];
 }
 
 const Row = ({ games, category }: RowProps) => {
@@ -12,7 +12,7 @@ const Row = ({ games, category }: RowProps) => {
     <div className="catalog-row">
       <h3 className="catalog-header">{category}</h3>
       <ul>
-        {games.map((game: IGameProps) => {
+        {games.map((game: ICatalog) => {
           return (
             <li key={game.id}>
               <ProductCard game={game} />
